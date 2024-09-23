@@ -7,6 +7,10 @@ const reviewSchema = mongoose.Schema({
     ref: 'Accommodation',
     required: true,
   },
+  image: {
+    type: String,
+    trim: true,
+  },
   rating: { type: Number, required: true },
   comment: { type: String, required: true },
 });

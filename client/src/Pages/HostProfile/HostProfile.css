@@ -1,0 +1,78 @@
+.hostprofilepage {
+  display: flex;
+  background-color: rgb(32, 58, 30);
+}
+
+.hostsidebar {
+  position: fixed; /* Keep the sidebar fixed */
+  top: 0;
+  left: 0;
+  width: 250px; /* Set a width for the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Sidebar background color */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Some padding for the sidebar content */
+}
+
+.sb {
+  overflow-y: auto; /* Allow vertical scrolling for the main content */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.hostprofilepage h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+}
+
+.hostprofilepage .sb {
+  padding: 40px;
+  background-image: url('/images/for.jpg');
+}
+
+.hostprofilepage .sb .form-container .lb {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 5px;
+  /* padding: 40px; */
+}
+
+/* /////////// */
+
+.hostprofilepage .sb .form-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted rgb(255, 255, 255);
+  padding: 70px;
+  margin-left: 130px;
+  margin-top: 90px;
+}
+
+.hostprofilepage .sb .form-container .inp {
+  border-radius: 8px;
+  border: 1px solid white;
+  color: #222422c9;
+  margin-bottom: 50px;
+
+  height: 60px;
+  width: 700px;
+  color: #222422c9;
+  background-color: #d6d6d6;
+}
+
+.but {
+  padding: 8px 12px;
+  background-color: #d6d6d6;
+  color: #222422c9;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+  margin-left: 310px;
+}
+
+.but:hover {
+  background-color: #666; /* Darken on hover */
+  color: white;
+}

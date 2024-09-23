@@ -22,7 +22,7 @@ const HostSidebar = () => {
   const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('ID');
-    navigate('/host/login');
+    navigate('/login');
   };
 
   useEffect(() => {
@@ -55,10 +55,13 @@ const HostSidebar = () => {
 
     <div className="sidebar">
       <div className="host-profile">
-        <img src={host.image} className="host-image" />
         <div className="details">
-          <h3>{host.username}</h3>
-          <h5>{host.email}</h5>
+          <img src="/images/logo.png" alt="Logo" className="logo-image" />
+          <p></p>
+          <div className="sub">
+            <h3>{host.username}</h3>
+            <h5>{host.email}</h5>
+          </div>
         </div>
       </div>
       <hr></hr>
@@ -70,11 +73,16 @@ const HostSidebar = () => {
         </p>
 
         <p>
-          <NavLink className="link" to="/doctor/bookings">
-            My Bookings
+          <NavLink className="link" to="/host/getaways">
+            Getaways
           </NavLink>
         </p>
-        <p>Slots</p>
+        <p>
+          <NavLink className="link" to="/host/profile">
+            Profile
+          </NavLink>
+        </p>
+
         <p onClick={logout}>Logout</p>
       </div>
     </div>

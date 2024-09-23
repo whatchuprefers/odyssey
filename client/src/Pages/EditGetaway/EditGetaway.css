@@ -1,0 +1,95 @@
+.editgetawaypage {
+  display: flex;
+  background-color: rgb(32, 58, 30);
+}
+
+.editgetawaypage h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+}
+
+.editgetawaypage .subb {
+  padding: 40px;
+}
+
+.editgetawaypage .subb p {
+  margin-top: 250px;
+  margin-left: 380px;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  border: 1px dotted rgb(255, 255, 255);
+  padding: 15px;
+}
+
+.hostsidebar {
+  position: fixed; /* Keep the sidebar fixed */
+  top: 0;
+  left: 0;
+  width: 250px; /* Set a width for the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Sidebar background color */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Some padding for the sidebar content */
+}
+
+.subb {
+  overflow-y: auto; /* Allow vertical scrolling for the main content */
+  height: 100vh; /* Full height of the viewport */
+  width: 630vh;
+  background-image: url('/images/six.jpg');
+}
+/* /////// */
+
+.editgetawaypage .subb .rows {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted rgb(255, 255, 255);
+  padding: 70px;
+  margin-left: 70px;
+  margin-top: 90px;
+}
+
+.editgetawaypage .subb .rows .property-image {
+  width: 300px;
+  height: auto;
+}
+
+.editgetawaypage .subb .rows label {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.editgetawaypage .subb .rows input {
+  border-radius: 8px;
+  border: 1px solid white;
+  color: #ffffffad;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 700px;
+  background-color: #d6d6d6;
+  color: #222422c9;
+}
+
+.btnn {
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+.btnn button {
+  padding: 8px 12px;
+  background-color: #d6d6d6;
+  color: #222422c9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-bottom: 10px;
+}
+
+.btnn button:hover {
+  background-color: #666; /* Darken on hover */
+  color: white; /* Darken on hover */
+}

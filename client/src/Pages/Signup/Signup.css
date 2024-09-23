@@ -8,8 +8,8 @@ body {
 }
 
 .signup-form {
-  width: 300px;
-  height: 350px;
+  width: 380px;
+  height: 540px;
   margin: 100px 100px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border transparency */
@@ -23,30 +23,30 @@ body {
   ); /* Adjust the background transparency */
 }
 
-.signup-form .label {
+.signup-form .l {
   margin-bottom: 20px;
   color: rgb(0, 0, 0);
 }
 
-.signup-form .btn {
+.signup-form .bt {
   background-color: rgb(36, 87, 25);
   color: rgb(255, 255, 255);
   margin-top: 20px;
-  margin-left: 110px;
+  margin-left: 130px;
 }
 
-.signup-form .btn:hover {
+.signup-form .bt:hover {
   color: rgb(0, 0, 0); /* Change text color to black on hover */
   border-color: rgb(0, 0, 0); /* Change border color to black on hover */
 }
 
 .signup-form h2 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
   color: rgb(0, 0, 0);
 }
 
-.signup-form .input {
+.signup-form .inp {
   background-color: rgb(255, 255, 255);
   margin-top: 10px;
   margin-bottom: 10px;

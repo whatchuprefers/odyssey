@@ -1,5 +1,5 @@
-const Host = require('../db/models/host-schema'); // Import the Host model
-const Accommodation = require('../db/models/accommodation-schema'); // Import the Accommodation model
+const Host = require('../db/models/host-schema');
+const Accommodation = require('../db/models/accommodation-schema');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -118,7 +118,7 @@ exports.deleteHost = async (req, res) => {
   }
 };
 
-exports.getAccommodationsForHost = async (req, res) => {
+exports.getAccommodationsByHost = async (req, res) => {
   try {
     const hostId = req.params.id;
     const accommodations = await Accommodation.find({ host: hostId });
@@ -132,5 +132,27 @@ exports.getAccommodationsForHost = async (req, res) => {
     res.status(200).json(accommodations);
   } catch (error) {
     res.status(400).json({ message: error.message });
+  }
+};
+
+exports.resetPassword = async (req, res) => {
+  const { currentPassword, newPassword } = req.body;
+  const { id } = req.params;
+
+  try {
+    const host = await Host.findById(id);
+    if (!host) return res.status(404).json({ message: 'Host not found' });
+
+    const isMatch = await bcrypt.compare(currentPassword, host.password);
+    if (!isMatch)
+      return res.status(403).json({ message: 'Current password is incorrect' });
+
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    host.password = hashedPassword;
+    await host.save();
+
+    res.status(200).json({ message: 'Password updated successfully' });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
 };

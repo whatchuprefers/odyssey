@@ -1,0 +1,91 @@
+.homepage {
+  display: flex;
+  height: 100vh; /* Full height */
+}
+
+.hostsidebar {
+  width: 250px; /* Set a fixed width for the sidebar */
+  /* Add other styles as needed for the sidebar */
+}
+
+.right {
+  flex: 1; /* Take remaining space */
+  display: flex;
+  margin: 0;
+  flex-direction: column; /* Stack children vertically */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #000000;
+}
+
+.one,
+.two,
+.three {
+  flex: 1; /* Equal height */
+
+  background-size: contain;
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-position: center; /* Center the image */
+}
+
+.one {
+  background-image: url('/images/one.png');
+  min-height: 610px;
+}
+
+.two {
+  background-image: url('/images/two.jpg');
+  min-height: 610px;
+}
+
+.three {
+  background-image: url('/images/three.jpg');
+  min-height: 610px;
+}
+
+.two h3 {
+  color: white;
+  /* background-color: aqua; */
+  margin-left: 200px;
+  margin-top: 280px;
+  font-size: 38px;
+}
+
+.two .b {
+  margin-left: 740px;
+  margin-top: 13px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.two .b:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 43, 43);
+  border: 1px solid rgb(43, 43, 43);
+}
+
+/* //////////////////////////// */
+
+.three h3 {
+  color: white;
+  /* background-color: aqua; */
+  margin-left: 130px;
+  margin-top: 150px;
+  font-size: 38px;
+}
+
+.three .b {
+  margin-left: 530px;
+  margin-top: 20px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.three .b:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 73);
+  border: 1px solid rgb(43, 43, 43);
+}

@@ -6,21 +6,26 @@
 .sidebar {
   width: 300px;
   padding: 10px;
-
-  background-color: rgb(0, 5, 34);
-  border-right: 1px solid #ddd;
+  background-color: #262b27;
   height: 100vh;
 }
 
-.doctor-profile {
+.host-profile {
   display: flex;
   gap: 15px;
 }
 
-.doctor-profile .details {
+.host-profile .details {
+  display: flex;
   padding: 10px;
   margin-top: 15px;
-  color: white;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.host-profile .details .sub {
+  margin-top: 25px;
+  text-align: center;
 }
 
 .doctor-image {
@@ -45,8 +50,8 @@
   border-radius: 5px;
 }
 .menu p:hover {
-  background-color: rgb(195, 209, 255);
-  color: rgb(0, 0, 0);
+  background-color: #e4e4e4;
+  color: #2c2c2c;
 }
 
 .menu .NavLink {
@@ -56,4 +61,10 @@
 .link {
   color: inherit;
   text-decoration: inherit;
+}
+
+/* Example CSS for logo */
+.logo-image {
+  width: 150px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
