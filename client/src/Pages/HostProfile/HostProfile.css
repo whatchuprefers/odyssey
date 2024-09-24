@@ -19,12 +19,6 @@
   height: 100vh; /* Full height of the viewport */
 }
 
-.hostprofilepage h2 {
-  color: rgb(255, 255, 255);
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: lighter;
-}
-
 .hostprofilepage .sb {
   padding: 40px;
   background-image: url('/images/for.jpg');

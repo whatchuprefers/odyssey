@@ -33,10 +33,10 @@ const UserSidebar = () => {
     <div className="side">
       <div className="user-profile">
         <div className="det">
-          <img src="/images/logo.png" alt="Logo" className="logo-image" />
+          <h2>ODYSSEY</h2>
           <p></p>
           <div className="sub">
-            <h3>{user.firstname}</h3>
+            <h4>{user.firstname}</h4>
             <h5>{user.email}</h5>
           </div>
         </div>

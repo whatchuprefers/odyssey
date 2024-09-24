@@ -4,24 +4,10 @@
   height: 100vh; /* Full height */
 }
 
-.getawaypage h2 {
-  color: rgb(255, 255, 255);
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: lighter;
-}
-
 .getawaypage .sub {
   padding: 40px;
   overflow-y: auto; /* Enable scrolling for the content */
   flex: 1; /* Allow the content area to take remaining space */
-}
-
-.usersidebar {
-  width: 250px; /* Fixed width for the sidebar */
-  background-color: #fff;
-  height: 100%; /* Full height */
-  position: fixed; /* Keep it fixed */
-  overflow-y: auto; /* Allow scrolling if needed */
 }
 
 /* /////// */

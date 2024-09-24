@@ -24,8 +24,13 @@
 }
 
 .user-profile .det .sub {
-  margin-top: 25px;
+  margin-left: 35px;
   text-align: center;
+  color: #7a7a7a;
+}
+.user-profile h2 {
+  font-size: 26px;
+  font-family: cursive;
 }
 
 .menuu {

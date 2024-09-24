@@ -56,10 +56,10 @@ const HostSidebar = () => {
     <div className="sidebar">
       <div className="host-profile">
         <div className="details">
-          <img src="/images/logo.png" alt="Logo" className="logo-image" />
+          <h2>ODYSSEY</h2>
           <p></p>
           <div className="sub">
-            <h3>{host.username}</h3>
+            <h4>{host.username}</h4>
             <h5>{host.email}</h5>
           </div>
         </div>
