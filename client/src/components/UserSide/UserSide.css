@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.side {
+  width: 300px;
+  padding: 10px;
+  background-color: #262b27;
+  height: 100vh;
+}
+
+.user-profile {
+  display: flex;
+  gap: 15px;
+}
+
+.user-profile .det {
+  display: flex;
+  padding: 10px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.user-profile .det .sub {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.menuu {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menuu p {
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menuu p:hover {
+  background-color: #e4e4e4;
+  color: #2c2c2c;
+}
+
+.menuu .NavLink {
+  color: inherit;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Example CSS for logo */
+.logo-image {
+  width: 150px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

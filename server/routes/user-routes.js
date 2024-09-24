@@ -6,12 +6,11 @@ const checkToken = require('../middlewares/checkToken');
 
 router.post('/signup', controllers.signupUser);
 router.post('/login', controllers.loginUser);
-router.get('/', checkToken(['USER']), controllers.getAllUsers);
-router.get('/:id', checkToken(['USER']), controllers.getUserById);
+router.get('/', controllers.getAllUsers);
+router.get('/:id', controllers.getUserById);
 router.put(
   '/:id',
-  checkToken(['USER']),
-  upload.single('image'),
+
   controllers.updateUser
 );
 router.delete('/:id', checkToken(['USER']), controllers.deleteUser);

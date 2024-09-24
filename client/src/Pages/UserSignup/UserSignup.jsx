@@ -1,16 +1,15 @@
 import { Input, Button, notification } from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from '../../utils/axios';
-import './Signup.css';
+import './UserSignup.css';
 
-const Signup = () => {
+const UserSignup = () => {
   const navigate = useNavigate();
   const [signup, setSignup] = useState({
-    username: '',
+    firstname: '',
+    lastname: '',
     email: '',
-    contactNumber: '',
     password: '',
     confirmPassword: '',
   });
@@ -21,10 +20,10 @@ const Signup = () => {
 
   const onSignup = async () => {
     try {
-      const response = await axios.post('/host/signup', {
-        username: signup.username,
+      const response = await axios.post('/user/signup', {
+        firstname: signup.firstname,
+        lastname: signup.lastname,
         email: signup.email,
-        contactNumber: signup.contactNumber,
         password: signup.password,
         confirmPassword: signup.confirmPassword,
       });
@@ -33,7 +32,7 @@ const Signup = () => {
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('ID', response.data.id);
 
-      navigate('/host/home');
+      navigate('/user/home'); // Redirect to user home
     } catch (e) {
       if (e.response && e.response.status === 403) {
         notification.error({
@@ -52,24 +51,24 @@ const Signup = () => {
 
   return (
     <div className="signup-form">
-      <h2>Begin Your Story with Us!</h2>
-      <label className="l">Username</label>
+      <h2>Join Our Community!</h2>
+      <label className="l">First Name</label>
       <Input
         className="inp"
-        onChange={e => onChange(e, 'username')}
-        value={signup.username}
+        onChange={e => onChange(e, 'firstname')}
+        value={signup.firstname}
+      />
+      <label className="l">Last Name</label>
+      <Input
+        className="inp"
+        onChange={e => onChange(e, 'lastname')}
+        value={signup.lastname}
       />
       <label className="l">Email</label>
       <Input
         className="inp"
         onChange={e => onChange(e, 'email')}
         value={signup.email}
-      />
-      <label className="l">Contact</label>
-      <Input
-        className="inp"
-        onChange={e => onChange(e, 'contactNumber')}
-        value={signup.contactNumber}
       />
       <label className="l">Password</label>
       <Input
@@ -89,13 +88,13 @@ const Signup = () => {
         Sign Up
       </Button>
       <h5>
-        Already with us?{' '}
-        <Link to="host/login" className="signin-link">
-          Jump back in!
+        Already a member?{' '}
+        <Link to="/user/login" className="signin-link">
+          Log in here!
         </Link>
       </h5>
     </div>
   );
 };
 
-export default Signup;
+export default UserSignup;

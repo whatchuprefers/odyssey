@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'; // Import Link correctly
 import axios from '../../utils/axios';
-import './Login.css';
+import './UserLogin.css';
 
-const Login = () => {
+const UserLogin = () => {
   const navigate = useNavigate();
   const [login, setLogin] = useState({
     email: '',
@@ -18,13 +18,13 @@ const Login = () => {
 
   const onLogin = async () => {
     try {
-      const response = await axios.post('/host/login', {
-        emailOrUsername: login.email,
+      const response = await axios.post('/user/login', {
+        email: login.email,
         password: login.password,
       });
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('ID', response.data.id);
-      navigate('/host/home');
+      navigate('/user/home');
     } catch (e) {
       console.error('Login error:', e);
       // Optionally show an error notification here
@@ -47,7 +47,7 @@ const Login = () => {
       </Button>
       <h5>
         Not with us yet?{' '}
-        <Link to="host/signup" className="signup-link">
+        <Link to="/user/signup" className="signup-link">
           Start your journey here!
         </Link>
       </h5>
@@ -55,4 +55,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default UserLogin;

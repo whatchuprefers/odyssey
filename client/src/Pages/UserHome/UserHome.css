@@ -1,0 +1,55 @@
+.homepage {
+  display: flex;
+  height: 100vh; /* Full height */
+}
+
+.usersidebar {
+  width: 250px; /* Set a fixed width for the sidebar */
+  /* Add other styles as needed for the sidebar */
+}
+
+.right {
+  flex: 1; /* Take remaining space */
+  display: flex;
+  margin: 0;
+  flex-direction: column; /* Stack children vertically */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-image: url('/images/two.jpg');
+}
+
+.profile-info {
+  padding: 20px;
+  margin: 100px;
+  height: 200px;
+  color: rgb(0, 0, 0); /* Adjust text color */
+  background-color: rgba(
+    165,
+    165,
+    165,
+    0.7
+  ); /* Optional background for profile info */
+}
+
+.profile-info h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.profile-info .bttn {
+  margin-left: 630px;
+  margin-top: 20px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-info .bttn:hover {
+  background-color: rgb(88, 88, 88);
+  color: #ffffff;
+  border: 1px solid rgb(88, 88, 88);
+}

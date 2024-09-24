@@ -1,0 +1,68 @@
+.getawaypagedetails {
+  display: flex;
+  background-color: rgb(32, 58, 30);
+}
+
+.getawaypagedetails h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+}
+
+.getawaypagedetails .subb {
+  padding: 40px;
+}
+
+.getawaypagedetails .subb p {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 15px;
+}
+
+.usersidebar {
+  position: fixed; /* Keep the sidebar fixed */
+  top: 0;
+  left: 0;
+  width: 250px; /* Set a width for the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f4f4f4; /* Sidebar background color */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Some padding for the sidebar content */
+}
+
+.subb {
+  overflow-y: auto; /* Allow vertical scrolling for the main content */
+  height: 100vh; /* Full height of the viewport */
+  width: 630vh;
+  background-image: url('/images/six.jpg');
+}
+/* /////// */
+.subb .details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 90px;
+  padding-top: 20px;
+  width: 850px;
+  height: auto;
+
+  border: 1px dotted white;
+}
+.subb .details-container .property-image {
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.subb .details-container .oth {
+  background-color: rgba(255, 255, 255, 0.363);
+  margin: 20px;
+}
+
+.details-container .oth p {
+  font-size: 20px;
+  color: black;
+}

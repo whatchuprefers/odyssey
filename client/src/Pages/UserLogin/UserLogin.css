@@ -1,0 +1,70 @@
+body {
+  background-image: url('images/lo.png');
+  background-size: cover; /* Ensure the image covers the whole background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+.login-form {
+  width: 380px;
+  height: 350px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border transparency */
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgba(
+    173,
+    173,
+    173,
+    0.164
+  ); /* Adjust the background transparency */
+}
+
+.login-form .l {
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.login-form .bt {
+  background-color: rgb(36, 87, 25);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-left: 120px;
+  margin-bottom: 13px;
+}
+
+.login-form .bt:hover {
+  color: rgb(0, 0, 0); /* Change text color to black on hover */
+  border-color: rgb(0, 0, 0); /* Change border color to black on hover */
+}
+
+.login-form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.login-form .inp {
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login-form h5 {
+  margin-top: 2px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.login-form .signup-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.login-form .signup-link:hover {
+  text-decoration: underline;
+  color: #000000;
+}
